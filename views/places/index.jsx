@@ -29,10 +29,10 @@ function index (data) {
     })
     return (
       <Def>
-          <main>
+         <main>
               <h1>PLACES INDEX PAGE</h1>
               {placesFormatted}
-          </main>
+          </main> 
       </Def>
   )
   }
