@@ -5,7 +5,7 @@ let places = [{
     city: 'Seattle',
     state: 'WA',
     cuisines: 'Thai, Pan-Asian',
-    pic: '/images/chia-fruit-drink.png'
+    pic: '/images/chia-fruit-drink.jpg'
   }, {
     name: 'Coding Cat Cafe',
     city: 'Phoenix',
