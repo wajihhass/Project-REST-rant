@@ -38,7 +38,54 @@ let places = [{
       </Def>
   )
   } original*/
+/*888888***** 
+<div class="row">
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%">
+  </div>
+</div>
+*/
 
+function index (data) {
+  console.log(data)
+  let placesFormatted = data.places.map((place) => {
+    return (
+      <div className="col-sm-6">
+        
+        <h2>{place.name}</h2>
+        <p clasName="text-center">
+          {place.cuisines}
+        </p>
+        <div class="row">
+          <div class="column">
+        <img src={place.pic} alt={place.name}  class="center1" />
+        </div>
+        </div>
+        <p clasName="text-center">
+          Located in {place.city}, {place.state}
+        </p>
+      </div>
+    )
+  })
+  return (
+    <Def>
+        <main>
+            <h1>Places to Rant or Rave About</h1>
+            <div className="row">
+              {placesFormatted}
+            </div>
+        </main>
+    </Def>
+  )
+}
+module.exports = index
+
+
+
+/* Original
 function index (data) {
   console.log(data)
   let placesFormatted = data.places.map((place) => {
@@ -65,6 +112,4 @@ function index (data) {
         </main>
     </Def>
   )
-}
-module.exports = index
-
+}*/
