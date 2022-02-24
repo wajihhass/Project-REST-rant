@@ -1,5 +1,3 @@
-//const express = require('express')
-//const app = express()
 const React = require('react')
 const Def = require('../default')
 
@@ -16,38 +14,6 @@ let places = [{
     cuisines: 'Coffee, Bakery',
     pic: '/images/green.jpg'
   }]
-
-/* Original
-  function index (data) {
-    console.log(data)
-    let placesFormatted = data.places.map((place) => {
-      return (
-        <div>
-          <h2>{place.name}</h2>
-          <img src={place.pic} alt={place.name} class="center"/>
-        </div>
-    
-    )
-    })
-    return (
-      <Def>
-         <main>
-              <h1>PLACES INDEX PAGE</h1>
-              {placesFormatted}
-          </main> 
-      </Def>
-  )
-  } original*/
-/*888888***** 
-<div class="row">
-  <div class="column">
-    <img src="img_snow.jpg" alt="Snow" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="img_forest.jpg" alt="Forest" style="width:100%">
-  </div>
-</div>
-*/
 
 function index (data) {
   console.log(data)
@@ -84,32 +50,3 @@ function index (data) {
 module.exports = index
 
 
-
-/* Original
-function index (data) {
-  console.log(data)
-  let placesFormatted = data.places.map((place) => {
-    return (
-      <div className="col-sm-6">
-        <h2>{place.name}</h2>
-        <p clasName="text-center">
-          {place.cuisines}
-        </p>
-        <img src={place.pic} alt={place.name} class="center1" />
-        <p clasName="text-center">
-          Located in {place.city}, {place.state}
-        </p>
-      </div>
-    )
-  })
-  return (
-    <Def>
-        <main>
-            <h1>Places to Rant or Rave About</h1>
-            <div className="row">
-              {placesFormatted}
-            </div>
-        </main>
-    </Def>
-  )
-}*/

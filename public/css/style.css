@@ -12,17 +12,11 @@ h1 {
       .cent{
         text-align: center;
       }
-     /* .center1{
-        display:block;
-        margin-left: 1em;
-        margin-right: 10em;
-        width: 40%;
-      }*/
       .center1{
         width: 80%;
-        height: 80;
+        height: 80%;
       }
-      /* Three image containers (use 25% for four, and 50% for two, etc) */
+      /* two image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
   width: 33.33%;
