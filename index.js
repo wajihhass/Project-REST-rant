@@ -25,6 +25,11 @@ app.get('*', (req, res) => {
 app.get('/new', (req,res)=>{
     res.render('places/new')
 })
-
+app.get('/show',(req,res)=>{
+    res.render('places/show',{place:places[id]})
+})
 // Listen for Connections
 app.listen(process.env.PORT)
+
+/*     
+res.render('places/show', { place: places[id] })*/
