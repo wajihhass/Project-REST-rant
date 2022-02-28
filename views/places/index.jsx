@@ -51,44 +51,7 @@ function index (data) {
   )
 }
 module.exports = index
-/*   wajih8888888 8888    */
-/*   let placesFormatted = data.places.map((place, index) => {
-  return (
-    <div className="col-sm-6">
-      <h2>
-        <a href={`/places/${index}`} >
-          {place.name}
-        </a>
-      </h2>
-      <p className="text-center">
-        {place.cuisines}
-      </p>
-      <img src={place.pic} alt={place.name} />
-      <p className="text-center">
-        Located in {place.city}, {place.state}
-      </p>
-    </div>
-  )
-})   */
 
-/*   original
-/*  let placesFormatted = data.places.map((place) => {
-    return (
-      <div className="col-sm-6">
-        
-        <h2>{place.name}</h2>
-        <p clasName="text-center">
-          {place.cuisines}
-        </p>
-        <div class="row">
-          <div class="column">
-        <img src={place.pic} alt={place.name}  class="center1" />
-        </div>
-        </div>
-        <p clasName="text-center">
-          Located in {place.city}, {place.state}
-        </p>
-      </div>
-    )
-  })*/
+
+
 
