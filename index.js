@@ -25,6 +25,11 @@ app.get('*', (req, res) => {
 app.get('/new', (req,res)=>{
     res.render('places/new')
 })
+/*   wajih888*** */
+app.get('/show',(req,res)=>{
+    res.render('places/show')
+})
+/*     */
 app.get('/show',(req,res)=>{
     res.render('places/show',{place:places[id]})
 })

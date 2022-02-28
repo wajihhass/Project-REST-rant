@@ -20,12 +20,11 @@ function index (data) {
   let placesFormatted = data.places.map((place, index) => {
     return (
       <div className="col-sm-6">
-        
-        <h2>
-         <a href={'/places/${index}'} >
-          {place.name}
-          </a>
-        </h2>
+               
+      <h2>
+        <a href={`/places/${index}`} >
+          {place.name}  </a>
+      </h2>      
         <p clasName="text-center">
           {place.cuisines}
         </p>
@@ -52,7 +51,7 @@ function index (data) {
   )
 }
 module.exports = index
-
+/*   wajih8888888 8888    */
 /*   let placesFormatted = data.places.map((place, index) => {
   return (
     <div className="col-sm-6">
