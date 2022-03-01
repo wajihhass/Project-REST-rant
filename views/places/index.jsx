@@ -17,7 +17,7 @@ let places = [{
 
 function index (data) {
   console.log(data)
-  let placesFormatted = data.places.map((place, index) => {
+  let placesFormatted = data.places.map((place, index) => {// places is an array of our data
     return (
       <div className="col-sm-6">
                

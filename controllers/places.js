@@ -9,10 +9,28 @@ router.get('/', (req, res) => {
 router.get('/new', (req, res) => {
     res.render('places/new')
   })
-  router.get('/:id', (req, res) => {
+  router.get('/show', (req, res) => {// :id
     res.render('places/show')
   })
-/*   Wajih  */
+  /* added by wajih*/
+  router.get('/edit', (req, res) => {//wajih
+    res.render('places/edit')
+  })
+
+
+  router.get('/:id/edit', (req, res) => {// router.get('/:id/edit', (req, res) =>
+  let id = Number(req.params.id)
+  if (isNaN(id)) {
+      res.render('error404')
+  }
+  else if (!places[id]) {
+      res.render('error404')
+  }
+  else {
+    res.render('places/edit', { place: places[id] })
+  }
+})
+/* Wajih  res.render('places/edit', { place: places[id] }) */
 
   router.get('/:id', (req, res) => {
   let id = Number(req.params.id)
@@ -23,9 +41,10 @@ router.get('/new', (req, res) => {
     res.render('error404')
   }
   else {
-    res.render('places/show')
+    res.render('places/show')//show
   }
 })  
+
   router.get('/:id', (req, res) => {
   let id = Number(req.params.id)
   if (isNaN(id)) {
@@ -35,7 +54,7 @@ router.get('/new', (req, res) => {
     res.render('error404')
   }
   else {
-    res.render('places/show', { place: places[id], id })
+    res.render('places/edit')//, { place: places[id], id })// Wajih
   }
 })
 router.delete('/places/:id', (req, res) => {

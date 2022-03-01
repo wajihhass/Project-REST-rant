@@ -27,10 +27,17 @@ app.get('*', (req, res) => {
 app.get('/new', (req,res)=>{
     res.render('places/new')
 })
+app.get('/edit', (req,res)=>{//router.get('/:id/edit', (req, res) => {// router.get('/:id/edit', (req, res) => Wajih
+    res.render('places/${data.id}/edit',{place:places[id]} ) // added by wajih {place:places[id]}
 
+// <a href={'/places/${data.id}/edit'} className="btn btn-warning"> Edit</a> 
 app.get('/show',(req,res)=>{
     res.render('places/show',{place:places[id]})
+})
+
 })
 // Listen for Connections
 app.listen(process.env.PORT)
 
+
+///

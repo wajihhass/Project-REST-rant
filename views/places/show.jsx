@@ -6,7 +6,7 @@ function show () {
         <Def>
           <main>
                 <h1>Show Page</h1>
-                <a href={'/places/${data.id}/edit'} className="btn btn-warning"> Edit</a>      
+                <a href="/places/edit" className="btn btn-warning"> Edit</a>        
                 <form method="POST" action={'/places/${data.id}?_method=DELETE'}> 
                 <button type="submit" className="btn btn-danger">  Delete  </button>
                 </form>   
@@ -16,4 +16,12 @@ function show () {
 }
   module.exports = show
 
-  
+  /* <main>
+  <h1>Show Page</h1>
+  <a href={'/places/${data.id}/edit'} className="btn btn-warning"> Edit</a>      
+  <form method="POST" action={'/places/${data.id}?_method=DELETE'}> 
+  <button type="submit" className="btn btn-danger">  Delete  </button>
+  </form>   
+</main>*/
+
+//<li> <a href="/places/edit">Edit</a></li>
