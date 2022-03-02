@@ -18,8 +18,19 @@ function show (data) {
     )
 }
   module.exports = show
-
-
+/*
+  let placesFormatted = data.places.map((place) => {
+    return (
+      <div className="col-sm-6">
+        <h2>
+          <a href={/places/${place.id}`}>
+            {place.name}
+          </a>
+        </h2>
+        ...
+      </div>
+    )
+  })
 //  {`/places/${data.id}?_method=PUT`}
 
 
