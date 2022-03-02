@@ -20,11 +20,12 @@ const Def = require('../default.jsx')
         <input className="form-control" id="pic" name="pic" />
       </div>
       </div>
+      
       <div className="form-group">
         <label htmlFor="city">City</label>
         <input className="form-control" id="city" name="city" />
       </div>
-
+      
       <div className="form-group">
         <label htmlFor="state">State</label>
         <input className="form-control" id="state" name="state" />

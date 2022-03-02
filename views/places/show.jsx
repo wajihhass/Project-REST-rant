@@ -20,7 +20,7 @@ function show (data) {
   module.exports = show
 
 
-
+//  {`/places/${data.id}?_method=PUT`}
 
 
 //original work
