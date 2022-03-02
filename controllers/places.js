@@ -17,8 +17,9 @@ router.get('/new', (req, res) => {
     res.render('places/edit')
   })
 
+/*   8888888888888888888888888888888888888888888888888888888888888888888888888888      */
 
-  router.get('/:id/edit', (req, res) => {// router.get('/:id/edit', (req, res) =>
+  router.get('/:id/edit', (req, res) => {
   let id = Number(req.params.id)
   if (isNaN(id)) {
       res.render('error404')
@@ -30,8 +31,7 @@ router.get('/new', (req, res) => {
     res.render('places/edit', { place: places[id] })
   }
 })
-/* Wajih  res.render('places/edit', { place: places[id] }) */
-
+/*   8888888888888888888888888888888888888888888888888888888888888888    */
   router.get('/:id', (req, res) => {
   let id = Number(req.params.id)
   if (isNaN(id)) {
