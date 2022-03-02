@@ -9,18 +9,16 @@ router.get('/', (req, res) => {
 router.get('/new', (req, res) => {
     res.render('places/new')
   })
-  router.get('/show', (req, res) => {// :id
-    res.render('places/show')
+  router.get('/:id', (req, res) => {// :id
+    res.render('places/show', {place: places[req.params.id]})
   })
-  /* added by wajih*/
-  router.get('/edit', (req, res) => {//wajih
-    res.render('places/edit')
-  })
+  
 
 /*   8888888888888888888888888888888888888888888888888888888888888888888888888888      */
 
   router.get('/:id/edit', (req, res) => {
   let id = Number(req.params.id)
+  console.log(id)
   if (isNaN(id)) {
       res.render('error404')
   }
@@ -28,7 +26,9 @@ router.get('/new', (req, res) => {
       res.render('error404')
   }
   else {
+    console.log(places[id])
     res.render('places/edit', { place: places[id] })
+    
   }
 })
 /*   8888888888888888888888888888888888888888888888888888888888888888    */
@@ -54,7 +54,7 @@ router.get('/new', (req, res) => {
     res.render('error404')
   }
   else {
-    res.render('places/edit')//, { place: places[id], id })// Wajih
+    res.render('places/1/edit', { place: places[id], id })// Wajih added
   }
 })
 router.delete('/places/:id', (req, res) => {
