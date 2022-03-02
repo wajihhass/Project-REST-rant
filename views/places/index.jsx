@@ -1,6 +1,6 @@
 const React = require('react')
 const Def = require('../default')
-/*
+
 let places = [{
     name: 'H-Thai-ML',
     city: 'Seattle',
@@ -14,13 +14,13 @@ let places = [{
     cuisines: 'Coffee, Bakery',
     pic: '/images/green.jpg'
   }]
-*/
+
 
 
 
 function index (data) {
   console.log(data)
-  let placesFormatted = data.places.map((place => {// places is an array of our data
+  let placesFormatted = data.places.map((place) => {// places is an array of our data
     return (
       <div className="col-sm-6">
       <h2>
@@ -30,14 +30,13 @@ function index (data) {
         <p clasName="text-center">
           {place.cuisines}
         </p>
+
         <div class="row">
           <div class="column">
         <img src={place.pic} alt={place.name}  class="center1" />
         </div>
         </div>
-        <p clasName="text-center">
-          Located in {place.city}, {place.state}
-        </p>
+        <p clasName="text-center"> Located in {place.city}, {place.state} </p>
       </div>
     )
   })
@@ -53,6 +52,5 @@ function index (data) {
   )
 }
 module.exports = index
-
 
 
